@@ -1,0 +1,142 @@
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css);
+
+.form_elem{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+body{
+    overflow-y: hidden;
+}
+.searchfield{
+    border-radius: 10px 0 0 10px;
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    padding-left: 15px;
+}
+
+.submit_btn{
+    border-radius: 0 10px 10px 0;
+    margin-left: 2px; 
+    padding: 0 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.wheather_card_container{
+    margin-top: 2rem !important;
+    height: 45rem;
+    width: 55%;
+    margin: 0 auto; 
+    border-radius: 10px;
+}
+
+
+.icon_sect{
+    width: 100%;
+    height: 12rem;
+    text-align: center;  
+    background-color: white;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.custom_icon{
+    margin-top: 5px;
+    font-size: 150px;
+}
+
+.wheather_info{
+    display: flex;
+    flex: 1 100%;
+    width: 100%;
+    height: 13rem;
+    background-color: cadetblue;
+}
+
+.wheather_info_container{
+   flex: 0 0 65%;   
+   left: 100px;
+   background-color: crimson;
+   display: flex;
+   flex-direction: row;
+}
+
+.temp_sect{
+    flex: 0 0 35%;
+    text-align: center;
+    font-size: 32px;
+    height: 100%;
+    background-color: aquamarine;
+    padding: 60px 35px;
+    line-height: 50px;
+    font-weight: bolder;
+}
+
+.temp{
+    font-size: 60px;
+    padding: 0 25px;
+
+}
+
+.wheather_glance{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+}
+
+.climate{
+    font-size: 60px;
+    display: block !important;
+}
+
+.location{
+    font-size: 25px;
+}
+
+.w_location{
+    padding-left: 20px;
+    position: relative;
+    top: -4%;
+}
+
+.extra_weather_info{
+    width: 100%;
+    height: 140px;
+    background-color: rgb(107, 209, 240);
+}   
+
+
+.extra_weather_info{
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.sunset{
+    font-size: 70px;
+}
+
+.extra_weather_row{ 
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center;
+}
+
+.section1{
+    display: flex;
+    flex-direction: row;
+    align-items: center !important;
+    margin: 0 12px;
+}
+
+.section1 p{
+    font-size: 25px;
+    padding-left: 10px;
+}
