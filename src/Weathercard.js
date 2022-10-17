@@ -82,7 +82,7 @@ function Weathercard({ tempinfo }) {
           </div>
         </div>
         <div className='temp_sect'>
-          {new Date().toLocaleString()}
+           <p className='date_info'>{new Date().toLocaleString()}</p>
         </div>
       </section>  
       <section className='extra_weather_info'>

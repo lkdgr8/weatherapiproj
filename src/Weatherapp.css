@@ -2,18 +2,15 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css);
 
 .form_elem{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     margin-top: 2rem;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
 }
 
-body{
-    overflow-y: hidden;
-}
 .searchfield{
     border-radius: 10px 0 0 10px;
-    width: 300px;
+    width: 25%;
     height: 50px;
     font-size: 20px;
     padding-left: 15px;
@@ -22,17 +19,17 @@ body{
 .submit_btn{
     border-radius: 0 10px 10px 0;
     margin-left: 2px; 
-    padding: 0 20px;
+    padding: 11.5px 20px;
     font-size: 20px;
     cursor: pointer;
 }
 
 .wheather_card_container{
     margin-top: 2rem !important;
-    height: 45rem;
-    width: 55%;
-    margin: 0 auto; 
-    border-radius: 10px;
+    height: auto;
+    width: 60%;
+    margin: 0 auto;     
+    margin-bottom: 1rem;
 }
 
 
@@ -54,25 +51,27 @@ body{
     display: flex;
     flex: 1 100%;
     width: 100%;
-    height: 13rem;
+    height: 11rem;
     background-color: cadetblue;
 }
 
 .wheather_info_container{
    flex: 0 0 65%;   
-   left: 100px;
    background-color: crimson;
    display: flex;
    flex-direction: row;
 }
 
 .temp_sect{
+    word-wrap: break-word;
     flex: 0 0 35%;
     text-align: center;
     font-size: 32px;
     height: 100%;
     background-color: aquamarine;
-    padding: 60px 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     line-height: 50px;
     font-weight: bolder;
 }
@@ -107,7 +106,7 @@ body{
 
 .extra_weather_info{
     width: 100%;
-    height: 140px;
+    height: 130px;
     background-color: rgb(107, 209, 240);
 }   
 
@@ -126,6 +125,7 @@ body{
     width: 100%;
     display: flex;
     flex-direction: row !important;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -139,4 +139,71 @@ body{
 .section1 p{
     font-size: 25px;
     padding-left: 10px;
+}
+
+/* moblie responsive section */
+
+@media (max-width: 480px){
+    .searchfield{
+        width: 30%;
+    }
+    .wheather_glance{
+        display: block !important;
+        text-align: center !important;
+        width: 100%;
+    }
+    .wheather_info{
+        display: block !important;
+        height: 60% !important;
+        
+    }
+    .searchfield{
+        width: 58% !important;
+    }
+    .wheather_card_container{
+        width: 90% !important;
+    }
+    .custom_icon{
+        font-size: 100px;
+        position: relative;
+        top: 11%;
+    }
+    .icon_sect{
+        height: 9rem;
+    }
+    .temp{
+        font-size: 50px;
+        padding: 0 !important;
+    }
+    .climate{
+        font-size: 50px;
+    }
+    .w_location{
+        padding: 0 !important;
+    }
+    .wheather_info_container{
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+    .temp_sect{
+        height: 80%;
+        display: block;
+        padding: 4% 0;
+    }
+    .extra_weather_info{
+        height: auto;
+        
+    }
+    .date_info{
+        padding: 0px 10px;
+    }
+}
+
+@media (min-width: 480px) {
+  body{
+      overflow-y: hidden;
+  }
+  .temp_sect{
+    padding: 10% 0px;
+}
 }

@@ -45,7 +45,7 @@ function Weatherapp() {
           <div className='form_elem'>
               <input 
               id="search"
-              type="search"
+              type="search" 
               value={searchval}
               placeholder='your city'
               autoFocus
@@ -55,7 +55,7 @@ function Weatherapp() {
             <button className='submit_btn' type="button" onClick={search_func}>Submit</button>
           </div>
       </form>
-      <Weathercard tempinfo={tempinfo} />
+      <Weathercard tempinfo={tempinfo}/>
     </>
   )
 }
