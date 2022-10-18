@@ -17,7 +17,6 @@ function Weathercard({ tempinfo }) {
         name,
         country,
         speed,
-        dt,
         sunset
     } = tempinfo;
     useEffect(() => {
